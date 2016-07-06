@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <script src='/node_modules/angular/angular.min.js'></script>
+    <script src="/app.js"></script>
+    <link rel="normalize" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <link rel="stylesheet"href="main.css">
+    <title></title>
+  </head>
+  <body>
+    <section ng-controller="TriviaControl">
+    <section id="Question">
+      <button ng-click="showQuestion()">New Question</button>
+          <h1>{{trivia.question}}</h1>
+    </section>
+    <section id="Answer">
+      <input type="text" name="enter your answer" ng-model='scope.userAnswer'/>
+      <button ng-click='compareAnswer()'>Submit Answer</button>
+    </section>
+  </section>
+  </ul>
+  </body>
+</html>
