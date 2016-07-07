@@ -42,12 +42,12 @@ $scope.showCategory = function(){
 $scope.showCategory()
 }]);
 app.factory('GameFactory', ['$http',function($http){
-  let correct =[]
-  let incorrect = []
-  let toanswer = []
-  let trivia = []
-  let value = 0
-  let score = 0
+  // let correct =[]
+  // let incorrect = []
+  // let toanswer = []
+  // let trivia = []
+  // let value = 0
+  // let score = 0
   let categories=[]
   var gettrivia = function(){
     console.log('trivia')
