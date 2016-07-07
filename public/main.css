@@ -1,3 +1,30 @@
 html {
   background-color:gold;
 }
+ul{
+  list-style:none;
+}
+#Question{
+  display: inline-block;
+    width: 100%;
+    border: 1px solid black;
+}
+#correct{
+  display:inline-block;
+  width:34%;
+  float:left;
+}
+#incorrect{
+  display: inline-block;
+    width: 24%;
+    margin-left: 15%;
+    padding-left: 5%;
+    float: right;
+}
+#Question h1{
+  font-size:300%;
+}
+#score{
+  display:inline-block;
+  font-size:200%
+}

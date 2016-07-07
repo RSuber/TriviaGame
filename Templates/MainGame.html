@@ -1,0 +1,26 @@
+<section id="Question">
+  <h1>{{trivia.question}}</h1>
+  <section id ="categories">
+  <li ng-repeat="title in categories"><p ng-click="showQuestion()">{{categories}}<p></li>
+  </ul>
+</section>
+</section>
+<section id="Submission">
+  <input type="text" name="enter your answer" ng-model='userAnswer'/>
+  <button ng-click='compareAnswer()'>Submit Answer</button>
+</section>
+  <div id= "correct"><H2> Correct Answers </H2>
+  <ul ng-repeat="el in correct | orderBy:'name'">
+    <li>{{el.answer}}  {{el.value}}</li>
+  </ul>
+</div>
+<div id= 'score' ng-model='score'>
+  {{score}}
+</div>
+  <div id="incorrect">
+  <H2>Incorrect Answer</H2>
+  <ul>
+    <li ng-repeat="el in incorrect | orderBy:'name'">{{el.answer}}</li>
+    </ul>
+  </div>
+</section>
